@@ -36,12 +36,30 @@ class SamplePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const FractionallySizedBox(
-        widthFactor: 1,
-        child: Text(
-          'わーい',
-          textAlign: TextAlign.center,
-        ),
+      body: ListView(
+        children: [
+          LimitedBox(
+            maxHeight: 100,
+            child: Container(
+              color: Colors.red,
+              height: 150,
+            ),
+          ),
+          LimitedBox(
+            maxHeight: 100,
+            child: Container(
+              color: Colors.blue,
+              height: 100,
+            ),
+          ),
+          const FractionallySizedBox(
+            widthFactor: 1,
+            child: Text(
+              'わーい',
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ],
       ),
     );
   }
