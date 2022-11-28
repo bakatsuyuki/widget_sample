@@ -35,8 +35,12 @@ class SamplePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: const [Text('わーい')],
+      appBar: AppBar(),
+      body: Container(
+        child: Text(
+          'わーい',
+          textAlign: TextAlign.center,
+        ),
       ),
     );
   }
