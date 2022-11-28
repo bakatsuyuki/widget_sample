@@ -36,7 +36,8 @@ class SamplePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Container(
+      body: const FractionallySizedBox(
+        widthFactor: 1,
         child: Text(
           'わーい',
           textAlign: TextAlign.center,
